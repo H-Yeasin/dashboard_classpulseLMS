@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --webpack",
+    "dev:clean": "node -e \"try{require('fs').rmSync('.next/dev/lock',{force:true})}catch(e){}\" && next dev --webpack",
     "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint",
