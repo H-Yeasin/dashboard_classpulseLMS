@@ -67,7 +67,7 @@ export default function Login() {
   return (
     <div className="relative min-h-screen w-full flex items-center justify-center overflow-hidden px-4 py-8 sm:px-6">
       {/* Background image with purple overlay */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 -z-10">
         <Image
           src="/images/auth.png"
           alt="background"
@@ -80,9 +80,9 @@ export default function Login() {
       </div>
 
       {/* Login Card */}
-      <div className="relative z-10 bg-white rounded-[20px] sm:rounded-[30px] w-full max-w-[440px] sm:max-w-[540px] lg:max-w-[658px] overflow-hidden shadow-2xl">
+      <div className="relative z-10 bg-white rounded-[20px] sm:rounded-[30px] w-full max-w-[440px] sm:max-w-[540px] lg:max-w-[658px] overflow-hidden shadow-2xl flex flex-col">
         {/* Card Header — purple wave section */}
-        <div className="relative h-[220px] sm:h-[260px] lg:h-[295px] overflow-hidden">
+        <div className="relative z-0 h-[220px] sm:h-[260px] lg:h-[295px] overflow-hidden shrink-0">
           {/* Background image shape */}
           <Image
             src="/images/login-header.png"
@@ -107,7 +107,7 @@ export default function Login() {
         {/* Card Body — form */}
         <form
           onSubmit={handleSubmit}
-          className="px-6 sm:px-10 lg:px-[72px] pt-6 sm:pt-8 pb-8 sm:pb-10"
+          className="relative z-20 px-6 sm:px-10 lg:px-[72px] pt-6 sm:pt-8 pb-8 sm:pb-10 bg-white"
         >
           {error && (
             <div className="mb-4 text-red-500 text-sm bg-red-50 border border-red-200 rounded-[8px] px-4 py-2">
