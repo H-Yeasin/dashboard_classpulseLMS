@@ -3,9 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --webpack",
-    "build": "next build --webpack",
-    "start": "next start",
+    "dev": "node init && next dev --webpack",
+    "dev:clean": "node init && node -e \"try{require('fs').rmSync('.next/dev/lock',{force:true})}catch(e){}\" && next dev --webpack",
+    "build": "node init && next build --webpack",
+    "start": "node init && next start",
     "lint": "eslint",
     "test": "jest",
     "test:watch": "jest --watch",
