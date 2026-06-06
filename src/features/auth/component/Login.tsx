@@ -80,9 +80,9 @@ export default function Login() {
       </div>
 
       {/* Login Card */}
-      <div className="relative z-10 bg-white rounded-[20px] sm:rounded-[30px] w-full max-w-[440px] sm:max-w-[540px] lg:max-w-[658px] overflow-hidden shadow-2xl flex flex-col">
+      <div className="relative z-10 bg-white rounded-[20px] sm:rounded-[30px] w-full max-w-[440px] sm:max-w-[540px] lg:max-w-[658px] overflow-hidden shadow-2xl">
         {/* Card Header — purple wave section */}
-        <div className="relative z-0 h-[220px] sm:h-[260px] lg:h-[295px] overflow-hidden shrink-0">
+        <div className="relative z-0 h-[220px] sm:h-[260px] lg:h-[295px] overflow-hidden">
           {/* Background image shape */}
           <Image
             src="/images/login-header.png"
